@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_search_users"
+        android:title="Search for users"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/item_add_event"
+        android:title="Click to add an event"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/item_search_city_event"
+        android:title="Search for specific city event"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/item_logout"
+        android:title="Log out"
+        app:showAsAction="withText"/>
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74281253424",
+    "project_id": "dogtinder-f84fe",
+    "storage_bucket": "dogtinder-f84fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74281253424:android:e4f91b9273f77eba4e0bf5",
+        "android_client_info": {
+          "package_name": "il.example.dogtinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTcOfX4ApFMA_VJlROqNT4J-V91booAO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="il.example.dogtinder.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_loginFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="il.example.dogtinder.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment"
+            app:popUpTo="@id/my_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogsFragment"
+        android:name="il.example.dogtinder.ui.dog_feed.DogsFragment"
+        android:label="fragment_dogs"
+        tools:layout="@layout/fragment_dogs" >
+        <action
+            android:id="@+id/action_dogsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/my_nav" />
+        <action
+            android:id="@+id/action_dogsFragment_to_attenders"
+            app:destination="@id/attenders"
+            app:popUpTo="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_dogsFragment_to_usersSearchFragment"
+            app:destination="@id/usersSearchFragment"
+            app:popUpTo="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_dogsFragment_to_eventCitySearch"
+            app:destination="@id/eventCitySearch"
+            app:popUpTo="@id/dogsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attenders"
+        android:name="il.example.dogtinder.ui.attenders.Attenders"
+        android:label="fragment_attenders"
+        tools:layout="@layout/fragment_attenders" >
+        <action
+            android:id="@+id/action_attenders_to_dogsFragment"
+            app:destination="@id/dogsFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersSearchFragment"
+        android:name="il.example.dogtinder.ui.profile.UsersSearchFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_usersSearchFragment_to_specificUserFragment"
+            app:destination="@id/specificUserFragment"
+            app:popUpTo="@id/usersSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specificUserFragment"
+        android:name="il.example.dogtinder.ui.specificUser.SpecificUserFragment"
+        android:label="fragment_specific_user"
+        tools:layout="@layout/fragment_specific_user" />
+    <fragment
+        android:id="@+id/eventCitySearch"
+        android:name="il.example.dogtinder.ui.SpecificCityEvent.EventCitySearch"
+        android:label="EventCitySearch" >
+        <action
+            android:id="@+id/action_eventCitySearch_to_attenders"
+            app:destination="@id/attenders"
+            app:popUpTo="@id/eventCitySearch" />
+        <action
+            android:id="@+id/action_eventCitySearch_to_dogsFragment"
+            app:destination="@id/dogsFragment"
+            app:popUpTo="@id/my_nav" />
+    </fragment>
+</navigation>
