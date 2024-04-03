@@ -1,4 +1,4 @@
-This project was written in Kotlin, I have used MVVM architecture and also firebase to show updates on live.
+This project was written in Kotlin, I have used MVVM architecture and also firebase to show updates on live, Geocoder to convert the city name to longitude  and latitude,Glide to load images.
 The app aims for users who have dogs. each user can sign up for the app and upload a picture, then he can create his own events to meet with other people and their dogs, to got together for a walk,
 in that way people can interact and meet new people and make friends. 
 The user can attend to any event that was created besides the events he has created, to search for other user's profiles by their private name or by their dog's name and to comment for each user profile except his own profile.
